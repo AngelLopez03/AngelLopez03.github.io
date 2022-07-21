@@ -1,0 +1,297 @@
+@import url("inicio.css");
+@import url("libros.css");
+@import url("nosotros.css");
+@import url("libro.css");
+@import url("grafico.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Style+Script&display=swap');
+
+
+/* GLOBAL */
+*
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.contenedor
+{
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.fila
+{
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: table;  
+}
+
+[class*="col-"]{
+  float: left;
+  /*border: 1px solid black;*/
+  padding: 10px;
+}
+
+/* SECCION 1 */
+header
+{
+  background: #34c663;
+}
+
+header #logo a center
+{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+header .position
+{
+  margin-top: 15px;
+}
+
+header .position div a,
+.cerrar a
+{
+  color: #fff;
+}
+
+header .position div a:hover,
+.cerrar a:hover
+{
+  color: black;
+}
+
+header .position1
+{
+  margin-top: 14px;
+}
+
+header i
+{
+  width: 32px;
+  line-height: 2;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 6px;
+}
+
+/*CONTACTO*/
+
+#btn-contacto
+{
+  border: 0px;
+  background: #34c663;
+  color: white;
+  transition: color 300ms;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+#btn-contacto i
+{
+  display: none;
+}
+
+#btn-contacto:hover
+{
+  color: black;
+}
+
+/*=======================
+    Boton contacto
+========================*/
+#contacto
+{
+  background: #fff;
+  width: 100%;
+  height: 100px;
+  top: -4000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  transition: 600ms;
+  position: fixed;
+  overflow: hidden;
+}
+#contacto h1,
+#contacto p
+{
+  color: #777777;
+  margin-right: 10px;
+}
+
+#contacto h1
+{
+  font-size: 20px;
+}
+
+#contacto p b
+{
+  color: #46a2fd;
+  cursor: pointer;
+}
+
+#contacto p b:hover
+{
+  opacity: 0.8;
+  text-decoration: underline;
+}
+/*=======================
+    Boton contacto
+========================*/
+
+/*FOOTER*/
+footer
+{
+  background: #0e0e0e;
+  padding: 0 !important;
+  /*height: auto; !important;*/
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .titulo
+{
+  color: #fff;
+}
+
+footer .space
+{
+  margin-bottom: 35px;
+}
+
+footer .txt
+{
+  color: #777;
+}
+
+footer #title
+{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 25px;
+}
+
+footer div a:hover
+{
+  color: #34c663;
+}
+
+footer .comm
+{
+  color: #b3b1b1;
+}
+
+footer [placeholder="Mensaje"]
+{
+  height: 190px;
+}
+
+footer button
+{
+  background: #f7c052;
+  border: none;
+  cursor: pointer;
+}
+
+footer .contenedor_derechos
+{
+  background: #34c663;
+  text-align: center;
+}
+
+/* PANTALLA DE ESCRITORIO GRANDE- LARGE (lg) */
+
+@media(min-width: 1200px){
+
+  .col-lg-12{width: 100%;}
+  .col-lg-11{width: 91.66666667%;}
+  .col-lg-10{width: 83.33333333%;}
+  .col-lg-9{width: 75%;}
+  .col-lg-8{width: 66.66666667%;}
+  .col-lg-7{width: 58.33333333%;}
+  .col-lg-6{width: 50%;}
+  .col-lg-5{width: 41.66666667%;}
+  .col-lg-4{width: 33.33333333%;}
+  .col-lg-3{width: 25%;}
+  .col-lg-2{width: 16.66666667%;}
+  .col-lg-1{width: 8.33333333%;}
+  .col-lg-0{display: none;}
+}
+
+/* PANTALLA DE ESCRITORIO MEDIANO- MEDIUM (md) */
+
+@media(max-width: 1199px) and (min-width: 992px){
+
+  .col-md-12{width: 100%;}
+  .col-md-11{width: 91.66666667%;}
+  .col-md-10{width: 83.33333333%;}
+  .col-md-9{width: 75%;}
+  .col-md-8{width: 66.66666667%;}
+  .col-md-7{width: 58.33333333%;}
+  .col-md-6{width: 50%;}
+  .col-md-5{width: 41.66666667%;}
+  .col-md-4{width: 33.33333333%;}
+  .col-md-3{width: 25%;}
+  .col-md-2{width: 16.66666667%;}
+  .col-md-1{width: 8.33333333%;}
+  .col-md-0{display: none;}
+}
+
+/* PANTALLA DE TABLET- SMALL (sm) */
+
+@media(max-width: 991px) and (min-width: 768px){
+
+  .col-sm-12{width: 100%;}
+  .col-sm-11{width: 91.66666667%;}
+  .col-sm-10{width: 83.33333333%;}
+  .col-sm-9{width: 75%;}
+  .col-sm-8{width: 66.66666667%;}
+  .col-sm-7{width: 58.33333333%;}
+  .col-sm-6{width: 50%;}
+  .col-sm-5{width: 41.66666667%;}
+  .col-sm-4{width: 33.33333333%;}
+  .col-sm-3{width: 25%;}
+  .col-sm-2{width: 16.66666667%;}
+  .col-sm-1{width: 8.33333333%;}
+  .col-sm-0{display: none;}
+}
+
+/* PANTALLA DE phone- EXTRA - SMALL (xs) */
+
+@media(max-width: 767px){
+
+  .col-xs-12{width: 100%;}
+  .col-xs-11{width: 91.66666667%;}
+  .col-xs-10{width: 83.33333333%;}
+  .col-xs-9{width: 75%;}
+  .col-xs-8{width: 66.66666667%;}
+  .col-xs-7{width: 58.33333333%;}
+  .col-xs-6{width: 50%;}
+  .col-xs-5{width: 41.66666667%;}
+  .col-xs-4{width: 33.33333333%;}
+  .col-xs-3{width: 25%;}
+  .col-xs-2{width: 16.66666667%;}
+  .col-xs-1{width: 8.33333333%;}
+  .col-xs-0{display: none !important;}
+  
+  header .position1
+  {
+    background: #2b9a4e;
+  }
+}

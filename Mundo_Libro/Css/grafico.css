@@ -1,0 +1,72 @@
+caption 
+{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+th
+{
+    padding: 15px;
+}
+
+.nada th 
+{
+    padding: 0 !important;
+}
+
+thead
+{
+    background: rgba(100, 50, 100, 0.3);
+}
+
+.titulog
+{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.btn_graficos
+{
+    background: #207c3e;
+    margin-bottom: 60px;
+    padding: 0 !important;
+}
+
+.btn_graficos div
+{
+
+    padding: 0 !important;
+}
+
+.btn_graficos a
+{
+    color: #fff;
+    display: flex;
+    font-size: 20px;
+    padding: 29px;
+    align-items: center;
+    justify-content: center;
+    background: #1b6a35;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn_graficos a:hover
+{
+    opacity: 0.7;
+}
+
+.select
+{
+    opacity: 0.6;
+}
+
+#table 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}

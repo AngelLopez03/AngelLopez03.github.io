@@ -1,0 +1,136 @@
+#tabs .tabs_container
+{
+    width: 100%;
+    background: #ffe0cfb0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tabs .tabs_container h1
+{
+    text-align: center;
+}
+
+.wrapper nav
+{
+    padding: 0 !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper nav label
+{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    color: #54a4a6;
+    background: #ffdcc9b0;
+    font-size: 17px;
+
+    border-top: 2px solid #cfbbbb;
+    border-right: 2px solid #cdbbbb;
+    border-bottom: 2px solid #cdbbbb;
+    border-left: 2px solid #cfbbbb;
+
+    border-top-right-radius: 20px;
+
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.wrapper nav label:hover
+{
+    color: #9dd1e3;
+    background: #fff;
+    border-bottom: 2px solid #cfbbbb;
+}
+
+.wrapper nav label b
+{
+    cursor: pointer;
+}
+
+#home:checked ~ nav label.home,
+#blog:checked ~ nav label.blog,
+#Programas:checked ~ nav label.Programas,
+#Proyecto:checked ~ nav label.Proyecto,
+#Nosotros:checked ~ nav label.Nosotros
+{
+    color: #54a4a6;
+    background: #fff;
+    border-bottom: none;
+}
+
+input[type="radio"]
+{
+    display: none;
+}
+
+#tabs_section
+{
+    padding: 0 !important;
+}
+
+#tabs section .content
+{
+    display: none;
+}
+
+section .content
+{
+    height: 100%;
+    background: #fff;
+    border-left: 2px solid #cdbbbb;
+    border-right: 2px solid #cdbbbb;
+    border-bottom: 10px solid #54a4a6;
+}
+
+section .content .barra_tabs
+{
+  position: relative;
+  padding: 0;
+  margin-left: 20px;
+  width: 10%;
+  height: 7px;
+  background: #54a4a6;
+  border-radius: 15%;
+}
+
+section .content p
+{
+    margin: 20px;
+    line-height: 20px;
+}
+
+section .content a
+{
+    color: #54a4a6;
+    margin: 20px;
+    cursor: pointer;
+}
+
+section .content .title
+{
+    font-size: 21px;
+    font-weight: 500; 
+    margin: 20px;
+    padding-left: 0;
+}
+
+section .content img
+{
+    width: 100%;
+}
+
+#home:checked ~ section .content-1,
+#blog:checked ~ section .content-2,
+#Programas:checked ~ section .content-3,
+#Proyecto:checked ~ section .content-4,
+#Nosotros:checked ~ section .content-5
+{
+    display: flex;
+    align-items: center;
+}

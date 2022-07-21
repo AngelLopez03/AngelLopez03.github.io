@@ -1,0 +1,99 @@
+#seccion2_book,
+#seccion3_book,
+.container_img_book
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cabecera
+{
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+
+.container-aside
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articulo
+{
+box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+border-radius: 6px;
+border-top: 5px solid #34c663;
+}
+
+
+/*Aside de los articulos relacionados*/
+.container-aside aside
+{
+  width: 350px;
+  border-radius: 6px;
+  box-shadow: 0 0 20px -20px black;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 0 !important;
+  margin-top: 40px;
+  background: #fff;
+}
+
+.container-aside aside img
+{
+  width: 100%;
+}
+
+.container-aside aside h2,
+.container-aside aside p
+{
+  margin-top: 20px;
+  padding: 0 20px;
+  color: black;
+}
+
+.container-aside aside h1
+{
+  color: black;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 2px 3px green;
+}
+
+.container-aside aside button
+{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 10px 50px;
+  font-size: 16px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.container-aside aside button:hover{
+  opacity: 0.9;
+}
+
+.container-aside aside button
+{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 10px 50px;
+  font-size: 16px;
+  background: #46a2fd;
+  border: none;
+  color: black;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.container-aside aside button:hover{
+  opacity: 0.9;
+}
+

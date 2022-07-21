@@ -1,0 +1,24 @@
+.nosotros_txt
+{
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	box-shadow: 3px 5px 6px 3px rgba(0, 0, 0, 0.2);
+}
+
+.nosotros_txt h1
+{
+	font-size: 30px;
+	padding: 20px;
+	color:  #394791b8;
+}
+
+.nosotros_txt p
+{
+	font-size: 20px;
+	color: #777;
+}

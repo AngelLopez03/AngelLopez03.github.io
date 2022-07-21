@@ -1,0 +1,264 @@
+/*Portada*/
+
+.libros-container-cover
+{
+  width: 100%;
+  height: 550px;
+  position: relative;
+  background-image: url(../img/libro_portada1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-info-cover
+{
+  max-width: 800px;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.container-info-cover hr
+{
+  width: 50%;
+  height: 5px;
+  background: #fff;
+  box-shadow: 3px 5px 5px black;
+}
+
+
+.container-info-cover h1
+{
+  font-size: 60px;
+  font-weight: 500px;
+  color: #fff !important;
+  margin-bottom: 20px;
+  text-shadow: 3px 5px 5px black;
+}
+.container-info-cover p{
+
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300px;
+
+}
+
+/*=======================
+Beatifull wordl of reading
+========================*/
+.txt_mot
+{
+  display: flex;
+}
+
+.txt_mot h1
+{
+  padding: 5px;
+}
+
+.redondeado
+{
+  background: #f7c052;
+  color: black;
+  margin-right: 5px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-align: center;
+}
+
+.redondeado2
+{
+  background: #e85342;
+  color: #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+}
+
+
+/*=======================
+  Contenedo de categorias
+========================*/
+input[type="radio"]
+{
+  display: none;
+}
+
+.container-category
+{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.container-category label
+{
+  margin: 10px;
+  font-size: 15px;
+  background: #00b9ef;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+}
+
+.container-category label:hover
+{
+  opacity: 0.8;
+}
+
+/*=======================
+  Contenedo de categorias
+========================*/
+/*=======================
+  --post-publicaciones--
+========================*/
+
+.posts
+{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.posts .post
+{
+  background: #025580;
+  box-shadow: 0 0 20px -20px black;
+  border-radius: 6px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  height: 600px;
+}
+
+.posts .post:hover
+{
+  background: #0090da;
+}
+
+.post .ctn-img
+{
+  width: 100%;
+
+}
+
+
+.post .ctn-img img
+{
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+}
+
+.post h2
+{
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 0px 20px;
+  color: #fff;
+}
+
+.post span
+{
+  display: block;
+  margin-top: 10px;
+  padding: 0px 20px;
+  color: #fff;
+}
+
+/*=======================
+  --post-publicaciones--
+========================*/
+
+/*=======================
+  sistema de filtrado
+========================*/
+[value="TODOS"]:checked ~ .posts .post[data-category]
+{
+  display: block;
+}
+
+[value="TERROR"]:checked ~ .posts .post:not([data-category~="TERROR"])
+{
+  display: none;
+}
+
+[value="TODOS"]:checked ~ .container-category [for="TODOS"],
+[value="COMEDIA"]:checked ~ .container-category [for="COMEDIA"],
+[value="TERROR"]:checked ~ .container-category [for="TERROR"],
+[value="CIENCIAFICCION"]:checked ~ .container-category [for="CIENCIAFICCION"],
+[value="ROMANCE"]:checked ~ .container-category [for="ROMANCE"],
+[value="ACCION"]:checked ~ .container-category [for="ACCION"],
+[value="INFANTIL"]:checked ~ .container-category [for="INFANTIL"]
+{
+  background: #e0f0ff;
+  color: black;
+}
+/*=======================
+  sistema de filtrado
+========================*/
+/*=======================
+  responsive-desing
+========================*/
+@media(min-width: 1960px){
+  .posts
+  {
+    grid-template-columns: repeat(6, 1fr); 
+  }
+}
+@media(max-width: 1366px) and (min-width: 1200px){
+  .posts
+  {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+@media(max-width: 1199px) and (min-width: 992px){
+  .posts
+  {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+@media(max-width: 991px) and (min-width: 768px){
+  .container-category label
+  {
+    font-size: 10px;
+  }
+
+  .posts
+  {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media(max-width: 767px) and (min-width: 550px){
+  .posts
+  {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media(max-width: 549px){
+  .posts
+  {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+}
+/*=======================
+  responsive-desing
+========================*/
