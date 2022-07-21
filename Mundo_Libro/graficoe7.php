@@ -56,7 +56,7 @@ $con=mysqli_query($link,$query);
                     <div class="col-lg-3 col-md-0 col-sm-0 col-xs-0"> <a href="nosotros.php">ACERCA DE</a> </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"> <a href="libros.php">LIBROS</a> </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"> <a href="Graficos.php">GRÁFICOS</a> </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"><a href="../Index.html">VOLVER</a></div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"><a href="../index.html">VOLVER</a></div>
                 </div>
                 <div class="position1 col-lg-2 col-md-2 col-sm-2 col-xs-12">
 
