@@ -1,9 +1,0 @@
-{
-	"conexion":{
-		"server" : "localhost",
-		"user" : "root",
-		"password" : "",
-		"database" : "proyecto",
-		"port" : "3306"
-	}
-}
