@@ -132,7 +132,7 @@ header label
 
 img
 {
-    position: absolute;
+    position: relative;
     bottom: -2rem;
     right: -3rem;
 }
@@ -641,10 +641,6 @@ footer
 
     header li.hide-sm {
         display: none;
-    }
-
-    .hero img {
-        position: relative;
     }
 
     .footer-grid {
