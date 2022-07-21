@@ -132,7 +132,7 @@ header label
 
 img
 {
-    position: relative;
+    /* position: relative; */
     bottom: -2rem;
     right: -3rem;
 }
