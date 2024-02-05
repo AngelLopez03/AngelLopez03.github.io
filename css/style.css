@@ -670,6 +670,18 @@ footer
     text-align: center;
 }
 
+.about
+{
+    max-width: 500px;
+}
+
+.wrapper-footer
+{
+    width: 100%;
+    padding: 20px;
+    background: var(--bg-accent);
+}
+
 @media only screen and (max-width: 1024px) {
     .wrapper {
         width: 90%;
