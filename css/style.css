@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2? family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --main: #88FF08;
+    --bg: #030302;
+    --bg-accent: #191919;
+    --font: #efefef;
+}
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a
+{
+    color: var(--font);
+}
+
+body
+{
+    background: var(--bg);
+    position: relative;
+}
+
+#menu-toggle
+{
+    display: none;
+}
+
+.wrapper
+{
+    width: 73%;
+    margin: auto;
+
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+header h3
+{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+header h3 small
+{
+    color: var(--main);
+    font-size: 0.8rem;
+}
+
+header ul
+{
+    display: flex;
+    align-items: center;
+}
+
+header li
+{
+    margin-left: 1.6rem;
+}
+
+header li:first-child
+{
+    margin-left: 0rem;
+}
+
+header li a
+{
+    font-size: 0.85rem;
+}
+
+header li:last-child a span
+{
+    margin-right: 0.4rem;
+}
+
+header label
+{
+    font-style: 1.4rem;
+    color: var(--main);
+    border: 1px solid var(--main);
+    height: 40px;
+    width: 40px;
+    display: none;
+    place-items: center;
+    border-radius: 3px;
+}
+
+.hero
+{
+    min-height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1
+{
+    color: var(--main);
+    font-weight: 800;
+    font-size: 4.3rem;
+    line-height: 5.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero a
+{
+    display: inline;
+    border: 3px solid var(--main);
+    padding: 0.45rem 1rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.hero a span
+{
+    font-size: 1.1rem;
+
+}
+
+img
+{
+    /* position: relative; */
+    bottom: -2rem;
+    right: -3rem;
+}
+
+.page-divide
+{
+    height: 80px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin: 1rem 0rem;
+}
+
+.divide
+{
+    width: 5px;
+    height: 80px;
+    background: var(--main);
+}
+
+.divide-line
+{
+    position: absolute;
+    width: 50%;
+    border: 1px dashed #ccc;
+}
+
+.divide-line.left
+{
+    left: 0;
+}
+
+.divide-line.right
+{
+    right: 0;
+}
+
+section
+{
+    padding: 2rem 0rem;
+    margin-bottom: 2rem;
+}
+
+.section-title
+{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.section-title h1
+{
+    color: var(--font);
+    letter-spacing: 2px;
+    line-height: 3rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.institucional-wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Institucional
+{
+    padding: 20px;
+}
+
+.section-title.Institucional h3
+{
+    color: var(--font);
+    letter-spacing: 2px;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.section-title.Institucional small
+{
+    font-size: 1rem;
+}
+
+.section-title small
+{
+    font-size: 1.2rem;
+    margin: 1rem;
+    color: #888;
+}
+
+.vid-wrapper
+{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    height: 58vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.vid-wrapper div
+{
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: grid;
+    place-items: center;
+}
+
+.vid-wrapper div span
+{
+    font-size: 10rem;
+    color: var(--main);
+}
+
+.skills-wrapper
+{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.percircle
+{
+    background: var(--bg-accent) !important;
+}
+
+.percircle span:first-child
+{
+    font-weight: 700 !important;
+}
+
+.percircle:after
+{
+    background: var(--bg) !important;
+}
+
+.skill
+{
+    display: grid;
+    justify-items: center;
+}
+
+.skill p
+{
+    color: var(--font);
+    clear: both;
+    padding-top: 0.5rem;
+}
+
+.portfolio-wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+    position: relative;
+}
+
+/*.portfolio-wrapper::before
+{
+    content: '';
+    height: 60px;
+    width: 60px;
+    background: var(--main);
+    position: absolute;
+    left: -10px;
+    top: -10px;
+
+}*/
+
+.bg-wrap
+{
+    height: 210px;
+    width: 210px;
+    background: var(--main);
+    position: absolute;
+    z-index: 10;
+}
+
+.bg-wrap.left
+{
+    top: -10px;
+    left: -10px;
+}
+
+.bg-wrap.right
+{
+    bottom: -10px;
+    right: -10px;
+}
+
+.portafolio
+{
+    background: var(--bg-accent);
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 50;
+}
+
+.portafolio h3
+{
+    color: #FFF;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.portafolio small
+{
+    color: var(--font);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.portafolio div
+{
+    height: 150px;
+    margin-top: 1.3rem;
+    border-radius: 3px;
+    width: 100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.portafolio a:hover
+{
+    opacity: 0.5;
+}
+
+.services-grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+    position: relative;
+}
+
+.service
+{
+    background: var(--bg-accent);
+    color: var(--font);
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 50;
+}
+.service h3
+{
+    font-size: 1.5rem;
+}
+
+.service h3, .service small
+{
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.service span
+{
+    font-size: 3.5rem;
+    color: var(--main);
+    display: inline-block;
+    margin: 1rem 0rem;
+}
+
+.service small
+{
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #888;
+}
+.brands
+{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0rem 3rem 0rem;
+    flex-wrap: wrap;
+}
+
+.brands span
+{
+    color: var(--font);
+    display: inline-block;
+    font-size: 4rem;
+    margin-right: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.brands span:last-child
+{
+    margin-right: 0rem;
+}
+
+.contact-grid
+{
+    display: grid;
+    grid-template-columns: 53% 47%;
+    grid-gap: 3rem;
+}
+
+.form-title h2
+{
+    color: #FFF;
+    font-size: 2.7rem;
+}
+
+.form-title h2 span
+{
+    padding-top: 1rem;
+    border-top: 5px solid var(--main);
+}
+
+.form-title small
+{
+    color: var(--font);
+}
+
+.form-group
+{
+    margin-bottom: 1rem;
+}
+
+.form-control
+{
+    height: 45px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background: transparent;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.form-group button
+{
+    padding: 0.5rem 2.5rem;
+    color: var(--font);
+    background: var(--main);
+    border: 1px solid var(--main);
+    font-weight: 700;
+}
+
+.form-progress
+{
+    margin: 1rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    border-radius: 5px;
+}
+
+.progress div
+{
+    width: 100%;
+    height: 10px;
+    background: var(--bg-accent);
+}
+
+.progress div span:last-child
+{
+    width: 30px;
+    height: 30px;
+    z-index: 20;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-accent);
+    display: grid;
+    place-items: center;
+    color: var(--font);
+    font-weight: 600;
+}
+
+.progress.active div span:first-child
+{
+    background: var(--main);
+    width: 50%;
+    height: 30px;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 0;
+}
+
+footer
+{
+    background: var(--bg-accent);
+    color: #fff;
+    padding: 2.7rem 0rem;
+}
+
+.footer-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.about h3
+{
+    font-size: 2.2rem;
+    color: var(--main);
+    font-weight: 600;
+}
+
+.about small
+{
+    display: inline-block;
+    margin: 1rem 0rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.socials
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials span
+{
+    font-size: 1.7rem;
+    color: var(--main);
+}
+
+.contact h3
+{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem; 
+}
+
+.contact ul 
+{
+    margin-bottom: 1rem;
+}
+
+.contact li
+{
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.contact li span
+{
+    color: var(--main);
+    font-size: 1.3rem;
+}
+
+.copyright
+{
+    padding: 1rem 0rem;
+    text-align: right;
+    color: var(--font);
+    font-size: 0.85rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen and ( max-width: 845px) {
+    header label {
+        display: grid;
+    }
+
+    .main-menu{
+        position: absolute;
+        top: -100%;
+        background: var(--bg-accent);
+        left: 0;
+        right: 0;
+        z-index: 100;
+        padding: 1.5rem 0rem;
+        transition: top 300ms;
+    }
+
+    #menu-toggle:checked ~ header .main-menu {
+        top: 70px;
+    }
+    
+
+    header ul {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+
+    header li {
+        margin: 0;
+        margin-bottom: 0.8rem;
+    }
+
+    header li:last-child {
+        margin-top: 1rem;
+    }
+
+    header li.hide-sm {
+        display: none;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero img {
+        display: none;
+    }
+
+    .portfolio-wrapper, .services-grid, .skills-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skill {
+        display: grid;
+        justify-items: center;
+    }
+
+    .skill p {
+        margin-bottom: 1rem;
+        padding-left: 0;
+    }
+
+    .portfolio-wrapper .bg-wrap.right {
+        bottom: -10px;
+        left: -10px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .portfolio-wrapper, .services-grid, .footer-grid {
+        grid-template-columns: 100%;
+    }
+
+    .service {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .hero {
+        min-height: 60vh;
+    }
+}

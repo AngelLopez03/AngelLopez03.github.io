@@ -1,0 +1,31 @@
+.post-agg
+{
+  background: rgba(1, 1, 1, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+.post-agg .ctn-img-agg
+{
+  width: 90px;
+  height: 90px;
+  padding: 50px;
+  border-radius: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-agg i
+{
+  font-size: 25px;
+  color: #fff;
+}
+
+.post-agg .ctn-img-agg:hover
+{
+  opacity: 0.5;
+}
+

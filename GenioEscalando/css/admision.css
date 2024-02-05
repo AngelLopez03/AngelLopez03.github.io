@@ -1,0 +1,102 @@
+
+#admision .cabecera{
+  width: 100%;
+  height: auto; 
+}
+
+/*--------COVER & TEXT---------*/
+
+#admision .inicio-container-cover
+{
+  width: 100%;
+  position: relative;
+  background-image: url(../img/blog_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+#admision .inicio-container-cover:before
+{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.7);
+  position: absolute;
+}
+
+#admision .container-info-cover
+{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+#admision .container-info-cover h1
+{
+  color: #fff; 
+}
+
+#admision .container-info-cover p{
+
+  color: #fff;
+  padding: 20px 35px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/*--------BUTTON---------*/
+#admision #btn_iniciar
+{
+	margin: 50px;
+  padding: 20px 40px;
+	border: none;
+  border-radius: 20px;
+	background: #eb422c;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	color: #fff;
+	overflow: none;
+	transition: all 300ms;
+}
+
+#admision #btn_iniciar:hover
+{
+	background: #54a4a6;
+	color: #fff;
+}
+
+.admi_contenedor
+{
+  padding-top: 0 !important;
+  height: auto;
+  background: #ff5776;
+}
+
+#admision .item
+{
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 15px;
+  color: #fff;
+}
+
+#admision .item i
+{
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+#admision .item .num
+{
+  font-size: 35px;
+  margin-bottom: 15px;
+}

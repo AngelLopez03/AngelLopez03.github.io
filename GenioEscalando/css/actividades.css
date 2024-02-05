@@ -1,0 +1,46 @@
+#actividades
+{
+    background: #fff;
+    color: rgb(83, 0, 0);
+    text-align: center;
+    
+}
+
+.acti_content
+{
+    padding: 0 !important;
+}
+
+.acti_content_uno,
+.acti_content_dos,
+.acti_content_tres,
+.acti_content_cuatro,
+.acti_content_cinco,
+.acti_content_seis
+{
+    padding: 0 !important;
+}
+
+.acti-genio .icon_acti
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #ffe0cfb0;
+    border: 2px solid #ffe0cfb0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acti-genio .icon_acti i
+{
+    color: rgba(109, 96, 96, 0.726);
+    font-size: 50px;
+}
+
+.acti-genio .acti_info
+{
+    text-align: left;
+    
+}
