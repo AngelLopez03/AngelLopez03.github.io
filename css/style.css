@@ -336,6 +336,9 @@ section
     text-align: center;
     position: relative;
     z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .portafolio h3
@@ -354,11 +357,11 @@ section
 
 .portafolio div
 {
-    height: 150px;
+    height: 250px;
+    width: 100%;
     margin-top: 1.3rem;
     border-radius: 3px;
-    width: 100%;
-    background-size:contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -597,6 +600,76 @@ footer
     font-size: 0.85rem;
 }
 
+.portafolio-proyect a
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ffffff8c; */
+    border-radius: 10px;
+    overflow: hidden;
+    /* border: 1px solid #ddd; */
+    margin-bottom: 40px;
+}
+
+.portafolio-proyect a div:first-child
+{
+    width: 50%;
+    height: 400px;
+    background-size: cover;
+}
+
+/* .portafolio-proyect a div
+{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+} */
+
+.portafolio-proyect a .text-proyect
+{
+    width: 50%;
+    height: 100%;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.portafolio-proyect a .text-proyect h3
+{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.portafolio-proyect a .text-proyect small
+{
+    text-align: left;
+    margin: 0;
+    color: #999;
+    font-weight: 100;
+}
+
+.container-proyect
+{
+    transition: transform 0.5s ease;
+    background-color: #191919;
+}
+
+.container-proyect:hover
+{
+    
+    transform: scale(1.05);
+}
+
+.hero h3 {
+    color: #ddd;
+    padding: 10px 5px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+}
+
 @media only screen and (max-width: 1024px) {
     .wrapper {
         width: 90%;
@@ -670,6 +743,24 @@ footer
     .portfolio-wrapper .bg-wrap.right {
         bottom: -10px;
         left: -10px;
+    }
+
+    .container-proyect
+    {
+        flex-direction: column;
+        border: 1px solid #999;
+    }
+
+    .portafolio-proyect a div:first-child,
+    .portafolio-proyect a .text-proyect
+    {
+        width: 100%;
+    }
+
+    .portafolio-proyect a .text-proyect
+    {
+        padding: 10px;
+        margin-top: 20px;
     }
 }
 
