@@ -70,7 +70,7 @@ function App() {
             <h3>Además, he desarrollado proyectos como:</h3>
             <ul>
               <li><b>Biblioteca Virtual Escolar:</b> Un sistema utilizado como proyecto de fin de curso por estudiantes de Informática.</li>
-              <li><b>Biblioteca Jurídica:</b> Una plataforma para facilitar el accesso rápido y cómodo a información legal.</li>
+              <li><b>Biblioteca Jurídica:</b> Una plataforma para facilitar el acceso rápido y cómodo a información legal.</li>
             </ul>
           </section>
           <section className='skills glass'>
