@@ -25,18 +25,37 @@ function App() {
         if (playCount >= maxPlays) {
           setPlayCount(0); // Reiniciar el contador de reproducciones
         }
-        video.play(); // Reproducir el video
+        if(video.paused) {
+          video.play(); // Reproducir el video
+        } else {
+          video.pause(); // Pausar el video si está reproduciendo
+        }
+
         handleLoadedMetadata(); // Configurar nuevamente el temporizador
       };
+
+      const handleDoubleClick = () => {
+        if(!document.fullscreenElement) { // Si no está en pantalla completa
+          if(video.requestFullscreen) {
+            video.requestFullscreen(); // Solicitar pantalla completa en navegadores compatibles
+          }
+        } else { // Si está en pantalla completa
+          if(document.exitFullscreen ) {
+            document.exitFullscreen(); // Salir de pantalla completa en navegadores compatibles
+          }
+        }
+      }
 
       // Registrar eventos
       video.addEventListener("loadedmetadata", handleLoadedMetadata);
       video.addEventListener("click", handleClick);
+      video.addEventListener("dblclick", handleDoubleClick);
 
       // Limpieza al desmontar el componente
       return () => {
         video.removeEventListener("loadedmetadata", handleLoadedMetadata);
         video.removeEventListener("click", handleClick);
+        video.removeEventListener("dblclick", handleDoubleClick);
         if (timer) clearTimeout(timer);
       };
     }
@@ -48,7 +67,7 @@ function App() {
           <nav className='nav'>
             <ul>
               <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#trayectoria">Trayectoria</a></li>
+              <li><a href="#trayectoria">Proyectos</a></li>
               <li><a href="#contacto">Contacto</a></li>
             </ul>
           </nav>
@@ -59,8 +78,8 @@ function App() {
             <p>Soy un <b>Desarrollador Web Full Stack</b> apasionado por los desafíos tecnológicos y el aprendizaje constante. Combino habilidades en <b>Frontend, Backend</b> y <b>Diseño UX/UI</b> para crear soluciones completas, funcionales y atractivas. Mi enfoque es construir experiencias que no solo cumplan con los requisitos técnicos, sino que también sean intuitivas y útiles para los usuarios.</p>
           </section>
           <section className='trayectory glass' id="trayectoria">
-            <h2>Trayectoria</h2>
-            <p>A lo largo de mi trayectoria, he trabajado en proyectos freelance donde lideré todas las etapas del desarrollo en colaboración con <b>Christian López</b>. Por ejemplo, construimos una <b>herramienta de aprendizaje virtual</b> desde cero llamado <a href="https://ellysmemory.com" target='_blank'>ellysmemory</a>, en la que desarrollamos un sistema de exámenes interactivos con cronómetro, estadísticas de progreso y gestión administrativa mediante una <b>API PHP</b> robusta y un diseño UX/UI atractivo. Este proyecto es especialmente significativo para mí porque combina tecnología con educación, ayudando a estudiantes a prepararse para exámenes de ingreso de manera eficiente y organizada.</p>
+            <h2>Proyectos</h2>
+            <p>He trabajado en proyectos freelance en colaboración con <b>Christian López</b>. Por ejemplo, construimos una <b>herramienta de aprendizaje virtual</b> desde cero llamado <a href="https://ellysmemory.com" target='_blank'>ellysmemory</a>, en la que desarrollamos un sistema de exámenes interactivos con cronómetro, estadísticas de progreso y gestión administrativa mediante una <b>API PHP</b> robusta y un diseño UX/UI atractivo. Este proyecto es especialmente significativo para mí porque combina tecnología con educación, ayudando a estudiantes a prepararse para exámenes de ingreso de manera eficiente y organizada.</p>
             <div className='gif'>
               <video autoPlay loop muted playsInline ref={videoRef}>
                 <source src="/ellysmemory.mp4" type="video/mp4" />
@@ -77,7 +96,7 @@ function App() {
             <h2>Habilidades Técnicas</h2>
             <ul>
               <li><b>Lenguajes:</b> HTML, CSS, JavaScript, TypeScript, PHP y MySQL.</li>
-              <li><b>Frameworks:</b> Actualmente me especializo en <b>React</b> y utilizo <b>Figma</b> para diseñar interfaces intuitivas.</li>
+              <li><b>Frameworks:</b> Actualmente me especializo en <b>React</b> y utilizo <b>Tailwind CSS</b> junto con <b>Figma</b> para crear interfaces intuitivas y visualmente atractivas.</li>
               <li><b>Metodologías:</b> Trabajo con APIs RESTful y práctico un enfoque modular y organizado para asegurar la escalabilidad de mis proyectos.</li>
             </ul>
             <br />
