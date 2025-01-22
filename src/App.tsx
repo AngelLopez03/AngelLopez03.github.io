@@ -86,7 +86,14 @@ function App() {
                   Tu navegador no soporta la etiqueta de video.
               </video>
             </div>
-            <h3>Además, he desarrollado proyectos como:</h3>
+            <div style={{marginBottom: "20px"}}>
+              <h3 style={{marginBottom: "5px"}}>Componente de React <span style={{background: "#5559", padding: "0px 5px"}}>rc-form</span></h3>
+              <p>He desarrollado un componente de formulario versátil, <a href="https://www.npmjs.com/package/@modular-web/rc-form" target='_blank'>rc-form</a>, que puede utilizarse tal cual o personalizarse según las necesidades específicas del proyecto. Este componente forma parte de la organización <b>@modular-web</b> en npm, ofreciendo flexibilidad y facilidad de uso para cualquier aplicación.</p>
+              <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
+                <img src="rc-form.png" alt="@modular-web/rc-form" style={{marginTop: "20px"}} width={"80%"}/>
+              </div>
+            </div>
+            <h3 style={{marginBottom: "5px"}}>Participe en otros proyectos como:</h3>
             <ul>
               <li><b>Biblioteca Virtual Escolar:</b> Un sistema utilizado como proyecto de fin de curso por estudiantes de Informática.</li>
               <li><b>Biblioteca Jurídica:</b> Una plataforma para facilitar el acceso rápido y cómodo a información legal.</li>
