@@ -1,42 +1,126 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Experiencia.css */
+
+/* Contenedor de los ítems de experiencia */
+.experience__items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Espacio entre los ítems de experiencia principales */
+  margin-top: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Estilos para cada ítem de experiencia */
+.experience-item {
+  padding: 25px;
+  border-radius: 10px;
+  /* Fondo semi-transparente similar al de tu imagen */
+  background: rgba(44, 62, 80, 0.062); /* Versión más clara y transparente del fondo principal */
+  color: #ecf0f1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  position: relative; /* Para la línea vertical de los ascensos */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.experience-item__company {
+  font-size: 1.8em;
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.experience-item__position {
+  font-size: 1.4em;
+  color: #abdbe3; /* Un azul más claro para el cargo */
+  margin-bottom: 5px;
+}
+
+.experience-item__period {
+  font-size: 0.95em;
+  color: #bdc3c7;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.experience-item__description {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: #ecf0f1;
+}
+
+/* Estilos para los ascensos (children) */
+.experience-item__children {
+  margin-top: 20px;
+  padding-left: 20px; /* Sangría para los ascensos */
+  position: relative;
+}
+
+.experience-item__children::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px; /* Grosor de la línea vertical */
+  background-color: rgba(255, 255, 255, 0.2); /* Color de la línea */
+  border-radius: 2px;
+}
+
+/* Estilos específicos para los ítems que son "child" (ascensos) */
+.experience-item--child {
+  margin-left: 20px; /* Sangría adicional si es un child dentro de otro child */
+  margin-top: 15px; /* Espacio entre items child */
+  background: rgba(52, 73, 94, 0.7); /* Un fondo ligeramente diferente para diferenciarlos */
+  box-shadow: none; /* Quitamos la sombra para un aspecto más ligero */
+  padding: 15px 20px;
+}
+
+.experience-item--child .experience-item__company {
+  font-size: 1.4em; /* Títulos de empresa más pequeños en ascensos */
+}
+
+.experience-item--child .experience-item__position {
+  font-size: 1.2em; /* Cargos más pequeños en ascensos */
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+  .experience {
+    padding: 20px;
+    margin: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .experience h2 {
+    font-size: 2em;
+  }
+
+  .experience__intro-text {
+    font-size: 1em;
+  }
+
+  .experience-item {
+    padding: 15px;
+  }
+
+  .experience-item__company {
+    font-size: 1.5em;
+  }
+
+  .experience-item__position {
+    font-size: 1.2em;
+  }
+
+  .experience-item__period {
+    font-size: 0.85em;
+  }
+
+  .experience-item__description {
+    font-size: 0.95em;
+  }
+
+  .experience-item__children {
+    padding-left: 10px;
+  }
+
+  .experience-item--child {
+    margin-left: 10px;
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
