@@ -87,7 +87,7 @@ function App() {
               <button type="submit" className="btn">Enviar</button>
             </form>
             <div className="social-links">
-              <a href="https://www.linkedin.com/in/angel-l%C3%B3pez-071851217/" target="_blank" className="social-link">
+              <a href="https://www.linkedin.com/in/angel-gabriel-l%C3%B3pez-alarc%C3%B3n-071851217/" target="_blank" className="social-link">
                 <img src="linkedin.svg" alt="LinkedIn" /> LinkedIn
               </a>
             </div>
